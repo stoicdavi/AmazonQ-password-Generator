@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.password-display {
+    position: relative;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+#password {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+#copy-btn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#copy-btn:hover {
+    background-color: #2980b9;
+}
+
+.strength-meter {
+    margin-bottom: 1.5rem;
+}
+
+.strength-meter p {
+    margin-bottom: 0.5rem;
+}
+
+.meter {
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#strength-bar {
+    height: 100%;
+    width: 0;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.options {
+    margin-bottom: 1.5rem;
+}
+
+.option {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.option label {
+    margin-left: 0.5rem;
+    flex: 1;
+}
+
+#length {
+    flex: 1;
+    margin: 0 10px;
+}
+
+#generate-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generate-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Password strength colors */
+.very-weak { background-color: #ff4d4d; }
+.weak { background-color: #ffa64d; }
+.medium { background-color: #ffff4d; }
+.strong { background-color: #4dff4d; }
+.very-strong { background-color: #2ecc71; }
